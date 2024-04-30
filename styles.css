@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Añadimos espacio debajo del título */
+  }
+  
+  #form-container, #lista-container {
+    margin-bottom: 20px;
+  }
+  
+  #form-container input, #form-container button, #lista-container input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  #form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #form-container button:hover {
+    background-color: #45a049;
+  }
+  
+  #lista-container {
+    overflow-y: auto; /* Cambiamos a auto para que la barra de desplazamiento se muestre solo cuando sea necesario */
+    max-height: 300px;
+    padding-right: 20px; /* Agregamos espacio a la derecha para compensar el ancho de la barra vertical */
+  }
+  
+  #lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  #lista li {
+    background-color: #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  #lista li .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  #lista li .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  

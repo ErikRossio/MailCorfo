@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Nombres y Correos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Nombres y Correos</h1>
+    <div id="form-container">
+      <input type="text" id="name-input" placeholder="Nombre">
+      <input type="email" id="email-input" placeholder="Correo">
+      <button onclick="agregar()">Agregar</button>
+    </div>
+    <div id="lista-container">
+      <input type="text" id="search-input" oninput="buscar()" placeholder="Buscar por nombre">
+      <ul id="lista">
+        <!-- Aquí se mostrarán los elementos agregados -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
